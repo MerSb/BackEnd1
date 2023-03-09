@@ -1,0 +1,17 @@
+[2023-02-27 22:39:16] [ERROR] [Main:36] org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: "C:/Users/rdiaz/test.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+[2023-02-27 22:39:33] [ERROR] [Main:36] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADO(ID) ( /* key:1 */ 1, 'Pedro', 'Perez', 25, 2)"; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'Pedro', 'Perez', 25, 2) [23505-214]
+[2023-02-27 22:40:04] [ERROR] [Main:36] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADO(ID) ( /* key:1 */ 1, 'Pedro', 'Perez', 25, 2)"; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'Pedro', 'Perez', 25, 2) [23505-214]
+[2023-02-27 22:52:43] [ERROR] [Main:63] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADO(ID) ( /* key:1 */ 1, 'Pedro', 'Perez', 25, 2)"; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'Pedro', 'Perez', 25, 2) [23505-214]
+[2023-02-27 22:53:06] [ERROR] [Main:63] org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE EMPLEADO SET APELLIDO = 'NuevoApellido' WHERE ID = 2[*])"; SQL statement:
+UPDATE EMPLEADO SET APELLIDO = 'NuevoApellido' WHERE ID = 2) [42000-214]
+[2023-02-27 22:58:40] [INFO ] [Main:57] Test
+[2023-02-27 23:08:25] [INFO ] [Main:64] El empleado id: 2nombre: Juanapellido: NuevoApellidoedad: 25antigüedad: 2 fue eliminado de la base
+[2023-02-27 23:08:25] [ERROR] [Main:74] org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "JULIAN" not found; SQL statement:
+DELETE FROM EMPLEADO WHERE NOMBRE = Julian [42122-214]
+[2023-02-27 23:09:13] [INFO ] [Main:64] El empleado id: 2nombre: Juan apellido: NuevoApellido edad: 25 antigüedad: 2 fue eliminado de la base
+[2023-02-27 23:09:13] [INFO ] [Main:70] El empleado id: 3nombre: Julian apellido: Gutierrez edad: 25 antigüedad: 2 fue eliminado de la base
+[2023-02-27 23:09:30] [INFO ] [Main:64] El empleado id: 2 nombre: Juan apellido: NuevoApellido edad: 25 antigüedad: 2 fue eliminado de la base
+[2023-02-27 23:09:30] [INFO ] [Main:70] El empleado id: 3 nombre: Julian apellido: Gutierrez edad: 25 antigüedad: 2 fue eliminado de la base
