@@ -1,0 +1,8 @@
+2023-02-27 20:57:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ANIMALES" no encontrada
+Table "ANIMALES" not found; SQL statement:
+SELECT * FROM ANIMALES [42102-214]
+2023-02-27 21:00:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "FIGRUAS" no encontrada
+Table "FIGRUAS" not found; SQL statement:
+SELECT * FROM FIGRUAS WHERE COLOR = 'ROJO' AND TIPO = 'CIRCULO' [42102-214]
